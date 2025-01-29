@@ -7,10 +7,10 @@ function readConfig()
     if (!isTest())
     {
         requiredEnvs = [
-            'NIGHTSCOUT_API_TOKEN',
-            'NIGHTSCOUT_URL',
-            'LINK_UP_USERNAME',
-            'LINK_UP_PASSWORD',
+            'CREATEDAPISECRET',
+            'chanez.ignorelist.com',
+            'andrewchanez@gmail.com',
+            'jivbig-berbUr-quzqe5',
         ];
     }
 
@@ -64,7 +64,7 @@ function readConfig()
         nightscoutDisableHttps: process.env.NIGHTSCOUT_DISABLE_HTTPS === 'true',
         nightscoutDevice: process.env.DEVICE_NAME || 'nightscout-librelink-up',
 
-        linkUpRegion: process.env.LINK_UP_REGION || 'EU',
+        linkUpRegion: process.env.LINK_UP_REGION || 'US',
         linkUpTimeInterval: Number(process.env.LINK_UP_TIME_INTERVAL) || 5,
         linkUpConnection: process.env.LINK_UP_CONNECTION as string,
     };
