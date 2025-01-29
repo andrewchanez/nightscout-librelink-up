@@ -7,10 +7,10 @@ function readConfig()
     if (!isTest())
     {
         requiredEnvs = [
-            'CREATEDAPISECRET',
-            'chanez.ignorelist.com',
-            'andrewchanez@gmail.com',
-            'jivbig-berbUr-quzqe5',
+            '',
+            'ch',
+            '',
+            '',
         ];
     }
 
